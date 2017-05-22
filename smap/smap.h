@@ -1,0 +1,9 @@
+#ifndef _SMAP_H
+
+#define SMAP_IOC_MAGIC 'x'
+#define SMAP_IOC_READ		_IOR(SMAP_IOC_MAGIC, 2, int)
+#define SMAP_IOC_WRITE		_IOW(SMAP_IOC_MAGIC, 3, int)
+#define SMAP_IOC_DIRECT_READ	_IOR(SMAP_IOC_MAGIC, 4, int)
+#define SMAP_IOC_DIRECT_WRITE	_IOW(SMAP_IOC_MAGIC, 5, int)
+
+#endif
