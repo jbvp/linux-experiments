@@ -23,6 +23,8 @@ int main(int argc, char *argv[])
 		return fd;
 	}
 
+	printf("&value=%p\n", &value);
+
 	if (argc == 3) {
 		value = atoi(argv[2]);
 		if (ioctl(fd, SMAP_IOC_DIRECT_WRITE, &value) < 0) {
