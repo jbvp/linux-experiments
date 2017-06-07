@@ -19,7 +19,7 @@ static int __init ap_init(void)
 
 	for (i = 0, p = page; i < (1 << AP_ORDER); i++, p++) {
 		pr_debug("page_address (virtual address) = %p\n",
-				page_address(page));
+				page_address(p));
 	}
 
 	return 0;
